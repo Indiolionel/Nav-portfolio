@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,19 +8,50 @@
     <link rel="stylesheet" href="estilo.css">
     <title>NavBar</title>
 </head>
+
 <body>
     <nav class="nav">
         <div class="contenedor">
-            <img class="item i0" src="logoPelota.png" alt="">
+            <div class="contenedor-logo">
+            <img class="item1 i0" src="logoPelota.png" alt="">
+        </div>
             <div class="contenedor-item">
-                <a class="item" href="">Inicio</a>
-                <a class="item" href="">Deportes</a>
-                <a class="item" href="">Sobre Nosotros </a>
-                <a class="item" href="">Contactenos</a>
-
+                <ul>
+                    <li class="item"> <a class="item-1" href="">Inicio</a> </li>
+                    <li class="item"> <a class="item-1" href="">Deportes</a>
+                        <ul class="despegable">
+                            <li class="item2"><a href="">Futbol</a></li>
+                            <li class="item2"><a href="">Baloncesto</a></li>
+                            <li class="item2"><a href="">Voley</a></li>
+                            <li class="item2"><a href="">Tenis</a></li>
+                            <li class="item2"><a href="">Hanball</a></li>
+                        </ul>
+                    </li>
+                    <li class="item"> <a class="item-1" href="">Sobre Nosotros </a> </li>
+                    <li class="item"> <a class="item-1" href="">Contactenos</a> </li>
+                </ul>
             </div>
         </div>
 
     </nav>
+    <section class="section">
+        <div class="comentario">
+            <p> Nuestra Pagina se trata de mostrar toda informacion del sector Deportes.
+                Desde como es el reglamento de cada uno, como asi tambien los deportistas y clubes que desempeñan dicha
+                disciplina.
+            </p>
+        </div>
+        <img class="img-deportes" src="deportes.jpg" alt="">
+    </section>
+    <section class="section2">
+        <div class="section-2">
+            <p>
+                Actividad o ejercicio físico, sujeto a determinadas normas, en que se hace prueba, con o sin
+                competición, de habilidad, destreza o fuerza física.
+                Recreación, pasatiempo o ejercicio físico, por lo común al aire libre.
+            </p>
+        </div>
+    </section>
 </body>
+
 </html>

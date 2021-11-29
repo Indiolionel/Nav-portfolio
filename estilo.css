@@ -1,33 +1,272 @@
+/*Elementos-base*/
 
-
-.item {
-    /* display: inline-block; */
-    margin-left: 50px;
-    color: red;
+a {
+    text-decoration: none;
+    color:#000;
 }
 
-.contenedor {
+p {
+    font-size: 20px;
+    
+}
+
+
+/*Nav-*/
+
+nav {
     display: flex;
+}
+.contenedor ul ul {
+    display:none;
+  }
+
+  .contenedor {
+    display: flex;
+    flex-direction: row;
     align-items: center;
     height:70px;
     width: 100%;
-    margin: 20px;
+    margin: 10px;
     box-shadow: 5px 2px 5px black;
-
 }
 
-.item:hover {
-    background-color: black;
-    color:#fff;
-}
-.contenedor-item {
+  .contenedor-item {
     display: flex;
     justify-content: flex-end;
     width: 100%;
     margin-right: 80px;
 }
 
-img {
-    width: 5%;
+.item {
+    /* display: inline-block; */
+    margin-left: 50px;
+    /* color: red; */
+    list-style: none;
+    display: inline-block;
+    background: linear-gradient(to top, red, #fff);
+    font-size: 18px;
+    box-shadow: 2px 2px 5px 5px black;
+    border-radius: 5px;
+}
+
+.item2 a {
+    display: inline-block;
+    background: linear-gradient(to top, red, #fff);
+    font-size: 18px;
+    box-shadow: 2px 2px 5px 5px black;
+    border-radius: 5px;
+}
+.i0 {
+    width: 65px;
+}
+
+.item-1:hover {
+    background: linear-gradient(to top, red, #000);
+    color:#fff;
+}
+
+.item-1 {
+    display: inline-block;
+}
+
+.item:hover {
+    background-color: red;
+    color:#fff;
+}
+
+.item2 {
+    list-style: none;
+    margin: 10px;
+}
+
+
+/*Despegable-Deportes*/
+
+.despegable {
+    /* background-color: red; */
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+
+.despegable li a{
+  text-decoration: none;
+}
+
+ul ul {
+   /* background-color: red; */
+   display: inline-block;
+   margin-left: -25px;
+
+   
+}
+
+ul ul li {
+margin-top: 8px;
+   
+}
+
+ ul li:hover >.despegable {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin-left: -200px;
+    
+  }
+
+
+.despegable li:hover >  a {
+  
+  background: linear-gradient(to bottom, red, #000);
+  color: #fff;
+  border-radius: 0px;
+}
+
+
+
+
+/*Section-1*/
+
+.section {
+    display: flex;
+    background: linear-gradient(to bottom, red, #fff);
+    height: 50%;
+    margin-top: 50px;
+    justify-content: space-around;
+    border: 1px solid black;
+}
+
+.d12 {
+    margin-right: 45px;
+}
+
+
+
+.comentario {
+    /* background: red; */
+    width: 50%;
+}
+
+.img-deportes {
+    width: 40%;
+    opacity: 0.7;
+}
+
+
+
+
+/*Section-2*/
+
+.section-2 {
+   /* background-color: blue; */
+   width: 100%;
+   display: flex;
+    background: linear-gradient(to top, red, #fff);
+    margin-top: 50px;
+    justify-content: space-around;
+    border: 1px solid black;
+
+}
+
+/*Media*/
+
+@media screen and  (max-width: 780px) {
+
+
+    /*nav*/
+
+    .contenedor {
+flex-direction: column;
+height: 270px;
+width: 120px;
+text-align: center;
+background: linear-gradient(to bottom, white, #000);
+}
+
+.contenedor-item {
+    
+    display: flex; 
+    flex-wrap: wrap;
+     justify-content: space-between;
+       /* background-color: red; */
+       width: 120px;
+       margin-left: 80px;
+     }
+
+ .contenedor-item  ul{
+/* background-color: rgb(136, 134, 134); */
+text-align: start;
+margin-left: -20px;
+     }
+    
+
+.contenedor-logo {
+    background-color: white;
+    width: 100%;
+}
+
+.item {
+    margin:5px;
+    color: red;
+    list-style: none;
+    display: inline-block;
+    background: linear-gradient(to top, red, #fff);
+    font-size: 18px;
+    box-shadow: 0px 0px 0px 0px black;
+    border-radius: 5px;
+}
+
+.item2 a {
+    display: inline-block;
+    background: black;
+    font-size: 18px;
+    box-shadow: 0px 0px 0px 0px black;
+    border-radius: 0px;
+}
+
+.item-1{
+    background-color: black;
+    color: white;
+}
+
+
+/*Despegable*/
+ul li:hover >.despegable {
+    flex-direction: column;
+    margin-left: -25px;
+    background: linear-gradient(to top, white, #000);
+    width: 80px;
+}
+
+.despegable li:hover >  a {
+    border-radius: 0px;
+}
+
+ul ul  {
+    box-shadow: 2px 0px 2px 0px black;
+}
+
+ul ul li a{
+    background-color: black;
+    color: white;
+
+}
+
+ 
+/*Section*/
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+   position: absolute;
+   margin-top: 10px;
+   margin-left: 150px;
+   height: 270px;
+}
+
+
 
 }
