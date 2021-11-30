@@ -190,7 +190,8 @@ background: linear-gradient(to bottom, white, #000);
      justify-content: space-between;
        /* background-color: red; */
        width: 120px;
-       margin-left: 80px;
+       margin-left: 70px;
+       overflow: hidden;
      }
 
  .contenedor-item  ul{
@@ -265,6 +266,8 @@ body {
    margin-top: 10px;
    margin-left: 150px;
    height: 270px;
+   /* text-align: justify; */
+   overflow: scroll;
 }
 
 
