@@ -134,7 +134,7 @@ margin-top: 8px;
 
 .section {
     display: flex;
-    background: linear-gradient(to top, black, #fff);
+    background: linear-gradient(to top, rgb(19, 18, 18), #fff);
     height: 50%;
     margin-top: 50px;
     justify-content: space-around;
@@ -166,7 +166,7 @@ margin-top: 8px;
    /* background-color: blue; */
    width: 100%;
    display: flex;
-    background: linear-gradient(to top, black, #fff);
+    background: linear-gradient(to top, rgb(19, 18, 18), #fff);
     margin-top: 50px;
     justify-content: space-around;
     border: 1px solid black;
@@ -179,17 +179,23 @@ margin-top: 8px;
 
 /*footer*/
 footer {
-margin-top: 140px;
+margin-top: 50px;
+
 }
 .footer-deportes {
+    display: inline-block;
     background-color: grey;
-    opacity: 0.8;
+    opacity: 0.9;
     /* bottom: 2px; */
     /* margin-left: 250px; */
     border: 2px solid grey;
     width: 100%;
-    height: 20px;
+    height: 60px;
     text-align: center;   
+}
+
+.div-a {
+    margin-top: 20px;
 }
 
 
